@@ -52,3 +52,16 @@ plt.ylabel("Cantidad de países")
 plt.title("Distribución del precio del Big Mac en distintos países")
 
 plt.show()
+
+
+plt.figure()
+
+plt.subplot(1, 2, 1)
+plt.hist(df["dollar_price"], bins=10)
+plt.title("Histograma")
+
+plt.subplot(1, 2, 2)
+plt.boxplot(df["dollar_price"])
+plt.title("Boxplot")
+
+plt.show()
