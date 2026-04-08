@@ -26,7 +26,7 @@ cofactores = np.zeros((3, 3))
 
 for i in range(3):
     for j in range(3):
-        # menor: elimino fila i y columna j
+       
         menor = np.delete(np.delete(A, i, axis=0), j, axis=1)
   
         cofactores[i, j] = ((-1) ** (i + j)) * np.linalg.det(menor)

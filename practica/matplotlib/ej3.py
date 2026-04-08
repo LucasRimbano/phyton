@@ -10,5 +10,5 @@ def funcion():
     plt.xlabel("EJE X")
     plt.ylabel("EJE Y")
     plt.show()
-
+    plt.grid()
 funcion()    
