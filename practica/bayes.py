@@ -32,9 +32,9 @@ print(f"P(Proveedor 1 y no rechazo) = {rama_prov1_y_no_rechazo:.4f}")
 print(f"P(Proveedor 2 y rechazo) = {rama_prov2_y_rechazo:.4f}")
 print(f"P(Proveedor 2 y no rechazo) = {rama_prov2_y_no_rechazo:.4f}")
 
-# -----------------------------
+
 # 2) PROBABILIDAD TOTAL
-# -----------------------------
+
 p_rechazo = rama_prov1_y_rechazo + rama_prov2_y_rechazo
 p_no_rechazo = rama_prov1_y_no_rechazo + rama_prov2_y_no_rechazo
 
@@ -42,9 +42,7 @@ print("\n=== PROBABILIDAD TOTAL ===")
 print(f"P(Rechazo) = {p_rechazo:.4f}")
 print(f"P(No rechazo) = {p_no_rechazo:.4f}")
 
-# -----------------------------
-# 3) BAYES
-# -----------------------------
+
 # Queremos: si una papa fue rechazada, ¿probabilidad de que sea del proveedor 1?
 p_prov1_dado_rechazo = rama_prov1_y_rechazo / p_rechazo
 p_prov2_dado_rechazo = rama_prov2_y_rechazo / p_rechazo
