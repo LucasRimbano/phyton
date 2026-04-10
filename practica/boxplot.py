@@ -3,16 +3,15 @@ import matplotlib.pyplot as plt
 
 
 datos = {
-    "Notas": [4, 6, 7, 8, 5, 9, 10, 6, 7, 8, 9, 5, 6, 7, 8]
+    "Notas": [5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 30]
 }
 
 df = pd.DataFrame(datos)
+sorted_df = df.sort_values(by="Notas")
+print("Datos ordenados:")
 
-print("Base de datos:")
-print(df)
 
 print("\nEstadísticas:")
-print(df.describe())
 
 
 plt.figure()
