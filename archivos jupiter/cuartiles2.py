@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-numeros = [12, 7, 9, 15, 10, 8, 6, 11, 14, 13, 5, 16, 9]
+numeros = [4,7,9,10,6,12,8,11,30,5,13]
 
 numeros.sort()
 print("Datos ordenados:", numeros)
